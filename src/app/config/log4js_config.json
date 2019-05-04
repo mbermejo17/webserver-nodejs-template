@@ -1,0 +1,15 @@
+{
+    "appenders":
+     {
+      "App": {
+          "type": "dateFile",
+          "filename": "./app/logs/App",
+          "pattern": "-yyyy-MM-dd.log",
+          "backups": 365,
+          "alwaysIncludePattern": true
+        }
+    },
+      "categories": {
+        "default": { "appenders": ["App"], "level": "all" }
+        }
+  }
